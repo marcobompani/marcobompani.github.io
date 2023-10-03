@@ -1,0 +1,96 @@
+## Basic Configuration
+
+baseurl = "https://marcobompani.github.io"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "marcobompani.github.io"
+
+author = "Marco Bompani"
+title = "Marco Bompani"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+#disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+#googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Marco Bompani"
+intro = "Cyber Security Engineer"
+description = "Now [@Nielsen](https://twitter.com/nielsen). Previously [@State Street](https://twitter.com/StateStreet), [@ATVI](https://twitter.com/ATVI_AB) and [@Certego](https://twitter.com/Certego_IRT)."
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = ""
+keywords = ""
+
+## Social Accounts
+[params.social]
+github = "marcobompani"
+#instagram = "marcobompani"
+#xing = "<username>"
+linkedin = "marco-bompani"
+twitter = "BompaniMarco"
+#facebook = "marco.bompani91"
+#google = "<username>"
+#googlescholar = "<account_id>"
+#stackoverflow = "<username>"
+#lastfm = "<username>"
+#goodreads = "<username>"
+#gitlab = "<username>"
+#bitbucket = "<username>"
+#fivehundredpx = "<username>"
+#flickr = "<username>"
+#foursquare = "<username>"
+#hackernews = "<username>"
+#kickstarter = "<username>"
+#patreon = "<username>"
+#pintrest = "<username>"
+#steam = "<username>"
+#reddit = "<username>"
+#snapchat = "<username>"
+#youtube = "<channelid>"
+keybase = "marcobompani"
+#twitch = "<username>"
+#soundcloud = "<username>"
+#tumblr = "<username>"
+#strava = "<username>"
+#skype = "<username>"
+#telegram = "<username>"
+#whatsapp = "<username>"
+#email = "marcobompani91+about@gmail.com"
+pgp = "publickey"
+
+## Extras
+[params.extra]
+copyright = "© 2022. Marco Bompani. [Some Rights Reserved](http://creativecommons.org/licenses/by/4.0/)."
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = false
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    identifier = "blog"
+    weight = 100
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
+[[menu.main]]
+    name = "publications"
+    identifier = "publications"
+    weight = 300
+    url = "/publications/"
