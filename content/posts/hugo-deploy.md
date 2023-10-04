@@ -122,3 +122,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 ```
+## Conclusions
+Now every time you push some changes from your local repository to GitHub, your Hugo website will be built and deployed automatically.
