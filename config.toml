@@ -1,96 +1,258 @@
-## Basic Configuration
-
-baseurl = "https://marcobompani.github.io"
-builddrafts = false
-canonifyurls = false
-languageCode = "en-US"
-
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "marcobompani.github.io"
-
-author = "Marco Bompani"
+baseURL = "https://marcobompani.github.io"
+theme = "LoveIt"
 title = "Marco Bompani"
-
-theme = "hugo-goa"
-
-## Hugo Built-in Features
-#disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
-#googleAnalytics = "XYZ"
+defaultContentLanguage = "en"
+languageCode = "en"
+languageName = "English"
+hasCJKLanguage = false
+paginate = 12
 enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+# test asdf
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
-## Site Settings
-[params]
-author = "Marco Bompani"
-intro = "Cyber Security Engineer"
-description = "Now [@Nielsen](https://twitter.com/nielsen). Previously [@State Street](https://twitter.com/StateStreet), [@ATVI](https://twitter.com/ATVI_AB) and [@Certego](https://twitter.com/Certego_IRT)."
-authorimage = "headshot.jpg"
-dateformat = "Jan 2, 2006"
+[author]
+  name = "Marco Bompani"
+  email = "marcobompani91@gmail.com"
+  link = "https://marcobompani.github.io"
 
-## Site Meta Settings
-[params.meta]
-description = ""
-keywords = ""
-
-## Social Accounts
-[params.social]
-github = "marcobompani"
-#instagram = "marcobompani"
-#xing = "<username>"
-linkedin = "marco-bompani"
-twitter = "BompaniMarco"
-#facebook = "marco.bompani91"
-#google = "<username>"
-#googlescholar = "<account_id>"
-#stackoverflow = "<username>"
-#lastfm = "<username>"
-#goodreads = "<username>"
-#gitlab = "<username>"
-#bitbucket = "<username>"
-#fivehundredpx = "<username>"
-#flickr = "<username>"
-#foursquare = "<username>"
-#hackernews = "<username>"
-#kickstarter = "<username>"
-#patreon = "<username>"
-#pintrest = "<username>"
-#steam = "<username>"
-#reddit = "<username>"
-#snapchat = "<username>"
-#youtube = "<channelid>"
-keybase = "marcobompani"
-#twitch = "<username>"
-#soundcloud = "<username>"
-#tumblr = "<username>"
-#strava = "<username>"
-#skype = "<username>"
-#telegram = "<username>"
-#whatsapp = "<username>"
-#email = "marcobompani91+about@gmail.com"
-pgp = "publickey"
-
-## Extras
-[params.extra]
-copyright = "© 2022. Marco Bompani. [Some Rights Reserved](http://creativecommons.org/licenses/by/4.0/)."
-poweredby = true
-highlightjs = true
-socialmarkup = true
-toc = true
-displayrssicon = false
-
-## Main Menu
-[[menu.main]]
-    name = "blog"
-    identifier = "blog"
-    weight = 100
-    url = "/blog/"
-[[menu.main]]
-    name = "about"
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "posts"
+    url = "/posts/"
+    title = "Blog"
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "tags"
+    url = "/tags/"
+    title = "Tags"
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "categories"
+    url = "/categories/"
+    title = "Categories"
+  [[menu.main]]
+    weight = 4
     identifier = "about"
-    weight = 200
+    pre = ""
+    post = ""
+    name = "about"
     url = "/about/"
-[[menu.main]]
-    name = "publications"
-    identifier = "publications"
-    weight = 300
-    url = "/publications/"
+    title = "About"
+
+[params]
+  defaultTheme = "dark"
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  fingerprint = ""
+  dateFormat = "2006-01-02"
+  title = "Marco Bompani"
+  description = ""
+  images = ["/logo.png"]
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = ""
+      name = "Marco Bompani"
+      pre = "<i class='fa-solid fa-terminal' aria-hidden='true'></i>"
+      post = ""
+      typeit = true
+
+  [params.footer]
+    enable = true
+    custom = ""
+    hugo = true
+    copyright = true
+    author = true
+    since = 2023
+    icp = ""
+    license= '<a rel="Some Rights Reserved" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Some Rights Reserved</a>'
+
+  [params.section]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.list]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.app]
+    title = "Marco Bompani"
+    noFavicon = true
+    svgFavicon = ""
+    themeColor = "#ffffff"
+    iconColor = "#5bbad5"
+    tileColor = "#da532c"
+
+  [params.search]
+    enable = true
+    type = "algolia"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      gravatarEmail = ""
+      avatarURL = "/img/headshot.jpg"
+      title = "Marco Bompani"
+      subtitle = "Cyber Security Engineer|Developer|Personal Finance"
+      typeit = false
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = false
+      paginate = 6
+  [params.social]
+    GitHub         = "marcobompani"
+    Twitter        = "BompaniMarco"
+	Linkedin       = "marco-bompani"
+    Youtubechannel = ""
+    Twitch         = ""
+    Email          = ""
+    Discord        = ""
+	KeyBase		   = "marcobompani"
+	pgp 		   = "publickey"
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = true
+    lightgallery = true
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = false
+    rssFullText = false
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+    [params.page.math]
+      enable = false
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      copyTex = true
+      mhchem = true
+    [params.page.mapbox]
+      accessToken = "pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"
+      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+      navigation = true
+      geolocate = true
+      scale = true
+      fullscreen = true
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      HackerNews = true
+      Reddit = true
+    [params.page.comment]
+      enable = false
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # someJavascript = "https://cdn.example.com/some.js"
+
+  [params.typeit]
+    speed = 100
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+
+  # CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ["jsdelivr.yml"]
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    # ["jsdelivr.yml"]
+    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
+    # "assets/data/cdn/"
+    data = "jsdelivr.yml"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[Permalinks]
+  posts = ":year/:month/:filename"
+
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

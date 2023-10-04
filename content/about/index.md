@@ -1,14 +1,12 @@
-+++
-categories = ["about"]
-comments = false
-date = "2023-02-06T18:11:06-00:00"
-draft = false
-slug = ""
-tags = []
-title = "About"
+---
+categories:
+comments: false
+date: "2023-02-06T18:11:06-00:00"
+draft: false
+tags: []
+title: "About"
+---
 
-showpagemeta = false
-+++
 I am a Cyber Security Engineer with 7 years of experience in Blue and Purlpe teaming currently serving at Nielsen.
 
 My main interests are Malware Analysis, Threat Intelligence, Adversary Emulation and Forensics.
