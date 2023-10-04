@@ -30,8 +30,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.114.0
     steps:
       - name: Install Hugo CLI
         run: sudo snap install hugo
@@ -55,7 +53,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./marcobompani.github.io
+          path: ./public
 
   # Deployment job
   deploy:
